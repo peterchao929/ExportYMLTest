@@ -1,0 +1,4 @@
+*.suo
+.vs
+ExportYMLTest/bin
+ExportYMLTest/obj
