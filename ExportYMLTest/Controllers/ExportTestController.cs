@@ -22,6 +22,9 @@ public sealed class ExportTestController : ControllerBase
     [HttpGet]
     public void Export()
     {
-        _exportTestService.Export();
+        _exportTestService.ExportByCamelCase();
+        _exportTestService.ExportByPascalCase();
+        _exportTestService.ExportByUnderscored();
+        _exportTestService.ExportByOriginList();
     }
 }

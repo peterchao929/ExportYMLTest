@@ -24,13 +24,14 @@ public class Item
 
 public class Dataset
 {
+    [YamlMember(ScalarStyle = ScalarStyle.SingleQuoted)]
     public string Directory { get; set; } = string.Empty;
 
-    // [YamlMember(ScalarStyle = ScalarStyle.SingleQuoted)]
     public string Filename { get; set; } = string.Empty;
     
     public YamlSequenceNode YTargets { get; set; } = new YamlSequenceNode();
 
+    [YamlMember(ScalarStyle = ScalarStyle.SingleQuoted)]
     public YamlSequenceNode XFeatures { get; set; } = new YamlSequenceNode();
 }
 
